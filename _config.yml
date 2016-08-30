@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: BrightChen
-subtitle:
+title: Bright Chen
+subtitle: Web Front-End Enthusiasts
 description:
 author: BrightChen
 language:
@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: clean-blog
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
