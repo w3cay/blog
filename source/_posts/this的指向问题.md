@@ -4,13 +4,13 @@ title: this的指向问题
 
 引言：javascript的this关键字是个非常让人头疼的部分，this的指向真是让人“出乎意料”。看了《javascript高级程序设计》中的关于this对象的描述，差不多有了一个清晰的认识，为了防止忘记和分享所以做此总结。
 
-##this在不同情况下的指向
+## this在不同情况下的指向
 ###全局环境中的this
 ```
 	alert(this);  //window
 ```
 在全局环境中this指向全局对象，在浏览器中自然就指向Window。
-###全局环境中函数调用
+### 全局环境中函数调用
 ```
 var name="Window";
 function object(){
@@ -20,7 +20,7 @@ function object(){
 object();   //Window
 ```
 这里this指向了全局对象，即Window。在这个例子中即使object函数内部也定义了name属性，但是javascript中遵循谁调用了函数，那么这个this就指向谁。在严格模式中，则是undefined。
-###作为对象的方法调用函数
+### 作为对象的方法调用函数
 ```
 var name = "Window";
 var o = {
@@ -32,12 +32,12 @@ var o = {
 o.sayName();  //object
 ```
 这次this指向的是定义的对象o，即当前对象。正好印证了谁调用指向谁的规律。
-###作为构造函数
+### 作为构造函数
 ```
 new Person();
 ```
 函数内部的this指向新创建的对象。
-###闭包内部函数
+### 闭包内部函数
 ```
 var name = "Window";
 var o = {
@@ -66,7 +66,7 @@ var o = {
 }
 console.log(o.sayName()());  //Object
 ```
-###使用call和apply
+### 使用call和apply
 ```
 call( thisArg [,arg1,arg2,… ] ); //参数列表，arg1,arg2,...
 apply(thisArg [,argArray] );    // 参数数组，argArray
