@@ -3,7 +3,7 @@ menu:
   Home: /
   Archives: /archives
   Resume: /resume
-  Game2048: /2048
+  Game: /2048
   RSS: /atom.xml
 
 # Title on top left of menu. Leave empty to use main blog title
