@@ -2,6 +2,9 @@
 menu:
   Home: /
   Archives: /archives
+  Resume: /resume
+  Game2048: /2048
+  RSS: /atom.xml
 
 # Title on top left of menu. Leave empty to use main blog title
 menu_title: Bright Chen 
@@ -27,7 +30,7 @@ google_analytics:
 
 # Addthis ID
 addthis:
-
+rss: /atom.xml
 # Social Accounts
 weibo_url: http://weibo.com/633012550
 twitter_handle:
