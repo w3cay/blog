@@ -25,8 +25,8 @@ comments:
     comment_count: 5
     comment_colorscheme: light
 
-# Google Analytics Tracking ID
-google_analytics:
+# Baidu Analytics
+baidu_analytics: true
 
 # Addthis ID
 addthis:
