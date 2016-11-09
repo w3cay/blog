@@ -55,7 +55,7 @@ throw new Error('信息')  // 这样写比较好
 throw '信息'  // 不建议这样写
 ```
 
-同时 API 提供错误信息的配置，包括错误等级、注释log、tag、黑白名单等等，方便错误的追踪统计。
+同时 API 提供错误信息的配置，包括错误等级、注释 log 、 tag 、黑白名单等等，方便错误的追踪统计。
 ```javascript
 Raven.config('你的DSN（在后台获取）', {
     level: 'info' // 可以是 'info'、 'warning'、或者是 'error' 其中一个
