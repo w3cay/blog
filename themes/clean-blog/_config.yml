@@ -7,7 +7,7 @@ menu:
   RSS: /atom.xml
 
 # Title on top left of menu. Leave empty to use main blog title
-menu_title: Bright Chen 
+menu_title: Bright Chen
 
 # URL of the Home page image
 index_cover: http://ocqgx7uz0.bkt.clouddn.com/city-art-graffiti-wall-large-1.jpg
@@ -39,3 +39,4 @@ github_url: https://github.com/w3cay
 gitlab_url:
 linkedin_url: http://www.linkedin.com/in/bright-chen
 mailto: w3cay@foxmail.com
+favicon: favicon.ico
