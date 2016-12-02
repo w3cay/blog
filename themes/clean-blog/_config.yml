@@ -24,8 +24,8 @@ comments:
     comment_count: 5
     comment_colorscheme: light
 
-# Baidu Analytics
-baidu_analytics: true
+# Analytics
+analytics: true
 
 # Addthis ID
 addthis:
