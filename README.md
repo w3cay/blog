@@ -1,2 +1,1 @@
-# [ 安望云海 ](http://w3cay.com)
-## Web Front-End Enthusiasts
+## [ 安望云海 ](http://w3cay.com) — 不愿成为知识的过客，在此记录和分享我的技术成长。
