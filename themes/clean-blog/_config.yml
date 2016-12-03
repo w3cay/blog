@@ -1,18 +1,19 @@
 # Header
 menu:
-  Home: /
-  Archives: /archives
-  Game: /2048
-  RSS: /atom.xml
+  首页: /
+  归档: /archives
+  游戏: /2048
+  关于: /resume
 
 # Title on top left of menu. Leave empty to use main blog title
-menu_title: Bright Chen
+menu_title: 安望云海
+title: 安望云海
 
 # URL of the Home page image
 index_cover: http://ocqgx7uz0.bkt.clouddn.com/city-art-graffiti-wall-large-1.jpg
 
 # Default post title
-default_post_title: Bright Chen
+default_post_title: 安望云海
 
 # Comments. Choose one by filling up the information.
 comments:
