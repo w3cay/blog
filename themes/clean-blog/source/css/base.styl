@@ -42,7 +42,8 @@ hr.small
   border-color white
 
 .navbar-custom
-  position absolute
+  position relative
+  float left
   top 0
   left 0
   width 100%
@@ -50,6 +51,7 @@ hr.small
   @extend .sans-serif
   .navbar-brand
     font-weight 800
+    color #fff
   .nav
     li
       a
@@ -119,10 +121,10 @@ hr.small
   @extend .background-cover
   margin-bottom 50px
   .site-heading, .post-heading, .page-heading
-    padding 100px 0 50px
+    padding 0px 0 50px
     color white
     @media only screen and (min-width: 768px)
-      padding 150px 0
+      padding 50 0
     &.archives
       color brand-primary
       margin-top 60px
@@ -140,7 +142,7 @@ hr.small
       margin 10px 0 0
     @media only screen and (min-width: 768px)
       h1
-        font-size 80px
+        font-size 55px
   .post-heading
     h1
       font-size 35px
@@ -231,17 +233,20 @@ hr.small
 footer
   background url(http://ocqgx7uz0.bkt.clouddn.com/city-art-graffiti-wall-large-1.jpg) no-repeat
   width 100%
-  background-position 50% 100%
-  background-size 100% 593px
-  padding 30px 0 30px
+  background-position 100% 100%
+  background-size 100% 500%
+  padding 20px 0 15px
   .list-inline
     margin 0
     padding 0
   .copyright
     font-size 14px
     text-align center
+    margin-top 15px
     margin-bottom 0
     color #fff
+    a
+      text-decoration none
   a
     color #fff
   .fa-inverse
@@ -357,3 +362,52 @@ img::-moz-selection
 
 body
   webkit-tap-highlight-color brand-primary
+
+.navbar-center
+  margin auto
+  text-align center
+  float none
+  max-width 608px
+  width 93%
+  a
+   color #fff
+   margin 3px
+   display inline-block
+   border 1px solid #fff
+   border-radius 100px
+   padding 0 10px
+   font-weight 600
+   background rgba(255,255,255, 0)
+   font-size 18px !important
+   &:hover
+     color #000
+     background rgba(255, 255, 255, 1)
+     text-decoration none
+   @media only screen and (max-width: 768px)
+    font-size 16px !important
+
+
+.navbar-default
+  background-color transparent
+  border none
+  color #fff
+  text-align center
+  .navbar-brand
+    display block
+    float none
+    font-size 50px
+    line-height normal
+    margin 40px 0
+    &:hover
+      color #e4dbdb
+
+.intro-header
+  background-repeat no-repeat
+  text-align center
+  background-position 100% 0%
+  background-size 100% 145%
+
+
+.navbar-header
+ @media (min-width: 768px)
+   float none

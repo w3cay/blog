@@ -3,7 +3,7 @@ menu:
   首页: /
   归档: /archives
   游戏: /2048
-  关于: /resume
+  项目: https://github.com/w3cay
 
 # Title on top left of menu. Leave empty to use main blog title
 menu_title: 安望云海
@@ -37,6 +37,6 @@ twitter_handle:
 facebook_url:
 github_url: https://github.com/w3cay
 gitlab_url:
-linkedin_url: http://www.linkedin.com/in/bright-chen
+zhihu_url: http://zhihu.com/people/bright-chen
 mailto: w3cay@foxmail.com
 favicon: favicon.ico
