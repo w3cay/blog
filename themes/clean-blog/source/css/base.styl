@@ -21,7 +21,7 @@ ul, ol
 
 h1, h2, h3, h4, h5, h6
   @extend .sans-serif
-  font-weight 800
+  font-weight 300
 
 a
   color gray-dark
@@ -41,6 +41,10 @@ hr.small
   border-width 4px
   border-color white
 
+body > .container
+  padding-top: 20px;
+
+
 .navbar-custom
   position relative
   float left
@@ -50,8 +54,8 @@ hr.small
   z-index 3
   @extend .sans-serif
   .navbar-brand
-    font-weight 800
-    color #fff
+    font-weight 300
+    color #404040
   .nav
     li
       a
@@ -64,7 +68,7 @@ hr.small
     background transparent
     border-bottom 1px solid transparent
     .navbar-brand
-      color white
+      color #404040
       padding 20px
       &:hover, &:focus
         color white-faded
@@ -115,14 +119,13 @@ hr.small
       transform translate3d(0, 100%, 0)
 
 .intro-header
-  background-color gray
+  background-color #fff
   background-position center center
   background-attachment scroll
   @extend .background-cover
-  margin-bottom 50px
   .site-heading, .post-heading, .page-heading
-    padding 0px 0 50px
-    color white
+    padding 0
+    color #735555
     @media only screen and (min-width: 768px)
       padding 50 0
     &.archives
@@ -145,7 +148,7 @@ hr.small
         font-size 55px
   .post-heading
     h1
-      font-size 35px
+      font-size 20px
     .subheading, .meta
       line-height 1.1
       display block
@@ -163,7 +166,7 @@ hr.small
         color white
     @media only screen and (min-width: 768px)
       h1
-        font-size 55px
+        font-size 40px
       .subheading
         font-size 30px
 
@@ -231,11 +234,10 @@ hr.small
 .archive-before-pagination
   height 30px
 footer
-  background url(http://ocqgx7uz0.bkt.clouddn.com/city-art-graffiti-wall-large-1.jpg) no-repeat
   width 100%
   background-position 100% 100%
   background-size 100% 500%
-  padding 20px 0 15px
+  padding 0 0 30px
   .list-inline
     margin 0
     padding 0
@@ -247,8 +249,7 @@ footer
     color #fff
     a
       text-decoration none
-  a
-    color #fff
+
   .fa-inverse
     color #000
 
@@ -395,7 +396,7 @@ body
   .navbar-brand
     display block
     float none
-    font-size 50px
+    font-size 28px
     line-height normal
     margin 40px 0
     &:hover
