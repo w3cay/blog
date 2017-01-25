@@ -6,7 +6,7 @@ body
   font-size 18px
   color gray-dark
   word-break break-word
-  font-family  "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif
+  @extend .sans-serif
 
 p
   line-height 1.7
@@ -124,7 +124,7 @@ body > .container
   background-attachment scroll
   @extend .background-cover
   .site-heading, .post-heading, .page-heading
-    padding 0
+    padding 30px 0 0
     color #735555
     @media only screen and (min-width: 768px)
       padding 50 0
