@@ -6,14 +6,14 @@ menu:
   项目: https://github.com/w3cay
 
 # Title on top left of menu. Leave empty to use main blog title
-menu_title: Bright's Blog
-title: Bright's Blog
+menu_title: 安望云海
+title: 安望云海
 
 # URL of the Home page image
 index_cover:
 
 # Default post title
-default_post_title: Bright's Blog
+default_post_title: 安望云海
 
 # Comments. Choose one by filling up the information.
 comments:
