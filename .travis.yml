@@ -27,4 +27,4 @@ branches:
     - develop
 env:
  global:
-   - GH_REF: github.com/w3cay/w3cay.github.io.git
+   - GH_REF: github.com/w3cay/blog.git
