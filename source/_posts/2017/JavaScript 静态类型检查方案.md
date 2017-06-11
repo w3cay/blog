@@ -5,7 +5,7 @@ date: "2017-06-10 20:50"
 tags: [JavaScript, Typescipt, Flow]
 ---
 
-TypeScipt 中的类型检查是 Javascipt 所缺少的，当考虑到项目的可靠性时，这个特性是必不可少的，目前的可实行方案有 TypeScipt 和 Flow 可供选择，下面和 ES6 做下比较和分析
+TypeScipt 中的类型检查是 Javascipt 所缺少的，当考虑到项目的可靠性时，这个特性是必不可少的，目前的可实行方案有 TypeScipt 和 Flow 可供选择，下面和 ES6 做下比较和分析
 
 ## 方案比较
 | 方案        | 简介           | 生态支持  |  学习成本        |       迁移成本           | 使用收益  |
