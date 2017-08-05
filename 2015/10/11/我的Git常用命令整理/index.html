@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="Git版本控制器（Github）在我的实际开发过程中起到很重要的作用，它使开发过程更有效率。通过Git可以记录项目中代码的每一次变化，并且可以“穿越时空”回到过去的任何状态。我在开发中主要使用Git的命令行提交每次的变化和克隆线上项目，自我感觉Git命令非常重要,所以今天总结一下我平常使用的一些Gi">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="安望云海">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="我的Git常用命令整理"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="安望云海"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+        <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>我的Git常用命令整理 - 安望云海</title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="//cdn.bootcss.com/github-markdown-css/2.6.0/github-markdown.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/blog/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.proxy.ustclug.org/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.proxy.ustclug.org/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdn.bootcss.com/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Baidu Analytics -->
+    
+<script src="https://s4.cnzz.com/z_stat.php?id=1254403531&web_id=1254403531" language="JavaScript"></script>
+
+
+
+</head>
+
+
+<body class="markdown-body">
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<!-- <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <!-- <div class="navbar-header page-scroll"> --> 
+            <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button> -->
+            <!-- <a class="navbar-brand" href="/blog/">安望云海</a>
+            <hr class="small"> -->
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- <div class="" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-center">
+                <a href="/blog/tags/CSS/" style="font-size: 14px;">CSS</a> <a href="/blog/tags/javascript/" style="font-size: 14px;">javascript</a> <a href="/blog/tags/git/" style="font-size: 14px;">git</a> <a href="/blog/tags/前端测试/" style="font-size: 14px;">前端测试</a> <a href="/blog/tags/前端监控/" style="font-size: 14px;">前端监控</a> <a href="/blog/tags/Async/" style="font-size: 14px;">Async</a> <a href="/blog/tags/Express/" style="font-size: 14px;">Express</a> <a href="/blog/tags/Vue/" style="font-size: 14px;">Vue</a> <a href="/blog/tags/Webpack/" style="font-size: 14px;">Webpack</a> <a href="/blog/tags/Await/" style="font-size: 14px;">Await</a>
+
+            </ul>
+        </div> -->
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('')">
+    <div class="head-layer">
+        
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>我的Git常用命令整理</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        2015-10-11
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/blog/tags/git/">#git#</a>
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>Git版本控制器（Github）在我的实际开发过程中起到很重要的作用，它使开发过程更有效率。通过Git可以记录项目中代码的每一次变化，并且可以“穿越时空”回到过去的任何状态。我在开发中主要使用Git的命令行提交每次的变化和克隆线上项目，自我感觉Git命令非常重要,所以今天总结一下我平常使用的一些Git命令。</p>
+<ul>
+<li><p>从现有仓库克隆项目到你的工作空间</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git clone [url]</div></pre></td></tr></table></figure>
+</li>
+<li><p>要确定哪些文件当前处于什么状态：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git status</div></pre></td></tr></table></figure>
+</li>
+<li><p>跟踪新文件，要跟踪 README 文件，运行：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git add README</div></pre></td></tr></table></figure>
+</li>
+<li><p>跟踪所有的文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git add --all</div></pre></td></tr></table></figure>
+</li>
+<li><p>提交更新,git add 命令过后就要运行提交命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git commit -m &quot;此处添加本次提交的信息&quot;</div></pre></td></tr></table></figure>
+</li>
+<li><p>把修改的文件先提交到stage,然后再从stage提交到branch：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git commit -a</div></pre></td></tr></table></figure>
+</li>
+<li><p>将git add 和 git commit 命令合并，但此命令不适用于新建的文件（没有被add的文件）：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git commit -am &quot;此处添加本次提交的信息&quot;</div></pre></td></tr></table></figure>
+</li>
+<li><p>查看和对比修改的内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git diff &lt;filename&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>查看提交历史：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git log</div></pre></td></tr></table></figure>
+</li>
+<li><p>创建名为branchName的分支：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git brach branchName</div></pre></td></tr></table></figure>
+</li>
+<li><p>放弃工作区和index的改动,HEAD指针仍然指向当前的commit：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git reset --hard HEAD</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>回退到上一个版本(等价于 git reset –hard HEAD~1)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git reset --hard HEAD^</div></pre></td></tr></table></figure></p>
+<ul>
+<li><p>回退到指定版本号状态</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git reset --hard 20038</div></pre></td></tr></table></figure>
+</li>
+<li><p>合并指定分支到当前分支（默认使用fast forward方式）：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git merge &lt;branch&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>删除分支：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git branch -d &lt;branch&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>从远程获取最新版本到本地仓库，并自动merge到本地分支：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git pull origin master</div></pre></td></tr></table></figure>
+</li>
+<li><p>丢弃你所有的本地改动与提交，可以到服务器上获取最新的版本并将你本地主分支指向到它：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git fetch origin</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>以上是就是Git的常用命令，可以完成大部分版本控制任务。我接触Git不算太长时间，对Git的命令和流程还没有完全理解，只停留在会用的状态，做此总结算是一个巩固，希望以后能够更深刻的理解Git这个神器。</p>
+<blockquote>
+<p>我的GitHub账号<a href="https://github.com/w3cay" target="_blank" rel="external">https://github.com/w3cay</a></p>
+</blockquote>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+ <section id="comments">
+<!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2136203"></script>
+<!-- UY END -->
+ </section>
+ 
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+
+
+    <!-- footer scripts -->
+    
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p class="copyright text-muted"><a href="http://w3cay.com">© 安望云海 ❤️</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdn.bootcss.com/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+</body>
+
+</html>

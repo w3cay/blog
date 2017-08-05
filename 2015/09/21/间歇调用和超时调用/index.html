@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="今天自己用原生js写了一个侧栏分享的小部件，其中用到的知识主要就是定时器，所以借此机会总结一下定时器的相关内容。首先，定时器分为间歇调用定时器和超时调用定时器，两者之间很相似，命令基本一样。
+间歇调用的代码：
+//声明一个间歇定时器，并把ID赋值给intervalId。
+var intervalId">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="安望云海">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="间歇调用和超时调用"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="安望云海"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+        <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>间歇调用和超时调用 - 安望云海</title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="//cdn.bootcss.com/github-markdown-css/2.6.0/github-markdown.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/blog/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.proxy.ustclug.org/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.proxy.ustclug.org/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdn.bootcss.com/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Baidu Analytics -->
+    
+<script src="https://s4.cnzz.com/z_stat.php?id=1254403531&web_id=1254403531" language="JavaScript"></script>
+
+
+
+</head>
+
+
+<body class="markdown-body">
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<!-- <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <!-- <div class="navbar-header page-scroll"> --> 
+            <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button> -->
+            <!-- <a class="navbar-brand" href="/blog/">安望云海</a>
+            <hr class="small"> -->
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- <div class="" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-center">
+                <a href="/blog/tags/CSS/" style="font-size: 14px;">CSS</a> <a href="/blog/tags/javascript/" style="font-size: 14px;">javascript</a> <a href="/blog/tags/git/" style="font-size: 14px;">git</a> <a href="/blog/tags/前端测试/" style="font-size: 14px;">前端测试</a> <a href="/blog/tags/前端监控/" style="font-size: 14px;">前端监控</a> <a href="/blog/tags/Async/" style="font-size: 14px;">Async</a> <a href="/blog/tags/Express/" style="font-size: 14px;">Express</a> <a href="/blog/tags/Vue/" style="font-size: 14px;">Vue</a> <a href="/blog/tags/Webpack/" style="font-size: 14px;">Webpack</a> <a href="/blog/tags/Await/" style="font-size: 14px;">Await</a>
+
+            </ul>
+        </div> -->
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('')">
+    <div class="head-layer">
+        
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>间歇调用和超时调用</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        2015-09-21
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/blog/tags/javascript/">#javascript#</a>
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>今天自己用原生js写了一个侧栏分享的小部件，其中用到的知识主要就是定时器，所以借此机会总结一下定时器的相关内容。<br>首先，定时器分为间歇调用定时器和超时调用定时器，两者之间很相似，命令基本一样。</p>
+<p>间歇调用的代码：</p>
+<pre><code>//声明一个间歇定时器，并把ID赋值给intervalId。
+var intervalId =setInterval(function(){
+    //执行代码
+},1000);
+
+//清除定时器
+clearInterval(intervalId);
+</code></pre><p>超时定时器的代码：</p>
+<pre><code>//声明一个超时定时器，并把ID赋值给timeoutId。
+var timeoutId =    setTimeout(function(){
+    //执行代码
+},1000);
+
+//清除定时器
+clearTimeout(timeoutId);
+</code></pre><p>说明：1.其中定时器第二个参数表示等待时间，以毫秒为单位。<br>      2.每个定时器都会返回一个唯一ID，使用唯一ID来清除定时器。</p>
+<p>其次，两者之间有一些区别。使用间歇调用的时候，代码的执行是重复的，在不使用clearInterval的情况下，会一直进行下去。在使用超时调用的时候，代码的执行是单次的，所以clearTimeout的使用不是必须的。<br>最后，在实际的使用中，因为javascript的运行是单线程的，所以代码的运行需要进行排队。在当前代码的运行时间大于定时器的时间间隔时，可能会出现间隔被跳过或者多个定时器之间的间隔比预期的要小，这样就会产生很多麻烦。所以，在设置间隔调用定时器的时候要在每次触发定时器之前，清除当前的定时器，来预防定时器错乱。当设置超时定时器时，可以使用链式调用的方法解决（如下）：<br>    setTimeout(function(){<br>        //执行代码<br>        setTimeout(arguments.callee,1000);<br>    },1000);</p>
+<p>其中，《JS高程》建议，最佳实践是使用后面这种方式来设置重复定时器。但是，在我编写侧边分享模块的移入移出的时候，用后面的这种方式会出现像素移动的延迟，就是会多移动一段距离（也可能是我才疏学浅），所以我选择了间隔调用的方式。</p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+ <section id="comments">
+<!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2136203"></script>
+<!-- UY END -->
+ </section>
+ 
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+
+
+    <!-- footer scripts -->
+    
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p class="copyright text-muted"><a href="http://w3cay.com">© 安望云海 ❤️</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdn.bootcss.com/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="浮动是css中的定位模型之一，css属性名为float，其中有三个值（初始值为none）：
+
+left 在包含框内向左浮动
+right 在包含框内向右浮动
+none 用于防止元素浮动
+
+采用浮动布局的元素将会从正常文档流中删除，虽然它不在正常文档流中，但它还会影响正常流中的布局，是不是有点霸道？那是">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="安望云海">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="浮动页面布局的那些事儿"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="安望云海"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+        <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>浮动页面布局的那些事儿 - 安望云海</title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="//cdn.bootcss.com/github-markdown-css/2.6.0/github-markdown.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/blog/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.proxy.ustclug.org/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.proxy.ustclug.org/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdn.bootcss.com/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Baidu Analytics -->
+    
+<script src="https://s4.cnzz.com/z_stat.php?id=1254403531&web_id=1254403531" language="JavaScript"></script>
+
+
+
+</head>
+
+
+<body class="markdown-body">
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<!-- <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <!-- <div class="navbar-header page-scroll"> --> 
+            <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button> -->
+            <!-- <a class="navbar-brand" href="/blog/">安望云海</a>
+            <hr class="small"> -->
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- <div class="" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-center">
+                <a href="/blog/tags/CSS/" style="font-size: 14px;">CSS</a> <a href="/blog/tags/javascript/" style="font-size: 14px;">javascript</a> <a href="/blog/tags/git/" style="font-size: 14px;">git</a> <a href="/blog/tags/前端测试/" style="font-size: 14px;">前端测试</a> <a href="/blog/tags/前端监控/" style="font-size: 14px;">前端监控</a> <a href="/blog/tags/Async/" style="font-size: 14px;">Async</a> <a href="/blog/tags/Express/" style="font-size: 14px;">Express</a> <a href="/blog/tags/Vue/" style="font-size: 14px;">Vue</a> <a href="/blog/tags/Webpack/" style="font-size: 14px;">Webpack</a> <a href="/blog/tags/Await/" style="font-size: 14px;">Await</a>
+
+            </ul>
+        </div> -->
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('')">
+    <div class="head-layer">
+        
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>浮动页面布局的那些事儿</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        2015-09-20
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/blog/tags/CSS/">#CSS#</a> <a href="/blog/tags/网页布局/">#网页布局#</a>
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>浮动是css中的定位模型之一，css属性名为<code>float</code>，其中有三个值（初始值为none）：</p>
+<ul>
+<li><strong>left </strong>在包含框内向左浮动</li>
+<li><strong>right</strong> 在包含框内向右浮动</li>
+<li><strong>none</strong> 用于防止元素浮动</li>
+</ul>
+<p>采用浮动布局的元素将会从正常文档流中删除，虽然它不在正常文档流中，但它还会影响正常流中的布局，是不是有点霸道？那是因为，浮动布局的本身作用是使文本能够环绕图片显示，只要元素设置了向左或向右的float属性，那么它周围的内容都会向它靠拢，注意是内容，元素的框还是无视它的，文本元素的边框不受浮动的影响，还是从正常文档流的左上角开始布局。</p>
+<p>如图：<br><img src="http://7xleuc.com1.z0.glb.clouddn.com/2015-08-28_180209.png" alt=""><br><img src="http://7xleuc.com1.z0.glb.clouddn.com/2015-08-28_180311.png" alt=""><br>那么，如何消除这种效果，并且浮动块可以保持浮动呢？那就需要用到clear属性了，其中有主要有这三个值：</p>
+<ul>
+<li><strong>left</strong> 清除元素左边的浮动</li>
+<li><strong>right</strong> 清除元素右边的浮动</li>
+<li><strong>both</strong> 清除元素两边的浮动</li>
+</ul>
+<p>上一个例子，当将内容元素增加<code>clear:left</code>属性，就会出现这样的效果：</p>
+<p><img src="http://7xleuc.com1.z0.glb.clouddn.com/2015-08-28_181406.png" alt=""></p>
+<p>当然使用<code>clear：both</code> 效果一样。如果是右浮动那就使用<code>clear：right</code>。</p>
+<p>下面一种情况，当包含块中两个元素都设置了浮动属性。<br><img src="http://7xleuc.com1.z0.glb.clouddn.com/2015-08-28_182035.png" alt=""><br>此时就会出现包含框Height值没有了，图中的高度是包含框Padding的值。这是因为当包含框中两个元素都设置了浮动属性，正常文档流中没有元素了，自然包含框就“瘪了”。这种情况也可以通过clear清除来修复这种情况，但是此时包含框中的两个元素都是浮动元素，肯定是本能清除它俩的，所以只能添加一个元素来进行清除。例如在包含框的最后增加</p>
+<p>html:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;br class=&quot;clear&quot;/&gt;</div></pre></td></tr></table></figure></p>
+<p>css:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">.clear&#123; clear:both; &#125;</div></pre></td></tr></table></figure></p>
+<p>然后，就正常了：<br><img src="http://7xleuc.com1.z0.glb.clouddn.com/2015-08-28_183200.png" alt=""><br>然而，这种方法并不好，每次清除都需要增加一个额外的标记。下面是更好的方法：<br>IE下清除浮使元素haslayout就可以了，如宽度值，高度值，绝对定位，zoom，浮动本身都可以让元素haslayout。显然，首选<code>zoom:1;</code>不会干扰任何样式。非IE浏览器常用的是overflow属性，<code>overflow:hidden;</code><br>所以兼容的做法是：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">.clear&#123;overflow:hidden; zoom:1;&#125;</div></pre></td></tr></table></figure></p>
+<p>小结，浮动定位用处非常的大，但是有时不是太好控制，所以当使用浮动的时候，要知道清除浮动的作用，让浮动之外的布局不受浮动影响。</p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+ <section id="comments">
+<!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2136203"></script>
+<!-- UY END -->
+ </section>
+ 
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+
+
+    <!-- footer scripts -->
+    
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p class="copyright text-muted"><a href="http://w3cay.com">© 安望云海 ❤️</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdn.bootcss.com/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+</body>
+
+</html>

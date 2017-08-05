@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="选择器是css中一个很重要的内容，使用选择器可以提高在开发过程中修改样式表时的工作效率，并且使css的编写结构更加清晰和简单。css3在以前版本的基础上又添加的一些新的选择器，所以今天来总结一下css3选择器的特性及用法。
+属性选择器css3新增了3个属性选择器，分别是E[foo^=”bar”]、E">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="安望云海">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="CSS3选择器清单"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="安望云海"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+        <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>CSS3选择器清单 - 安望云海</title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="//cdn.bootcss.com/github-markdown-css/2.6.0/github-markdown.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/blog/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.proxy.ustclug.org/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.proxy.ustclug.org/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdn.bootcss.com/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Baidu Analytics -->
+    
+<script src="https://s4.cnzz.com/z_stat.php?id=1254403531&web_id=1254403531" language="JavaScript"></script>
+
+
+
+</head>
+
+
+<body class="markdown-body">
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<!-- <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <!-- <div class="navbar-header page-scroll"> --> 
+            <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button> -->
+            <!-- <a class="navbar-brand" href="/blog/">安望云海</a>
+            <hr class="small"> -->
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- <div class="" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-center">
+                <a href="/blog/tags/CSS/" style="font-size: 14px;">CSS</a> <a href="/blog/tags/javascript/" style="font-size: 14px;">javascript</a> <a href="/blog/tags/git/" style="font-size: 14px;">git</a> <a href="/blog/tags/前端测试/" style="font-size: 14px;">前端测试</a> <a href="/blog/tags/前端监控/" style="font-size: 14px;">前端监控</a> <a href="/blog/tags/Async/" style="font-size: 14px;">Async</a> <a href="/blog/tags/Express/" style="font-size: 14px;">Express</a> <a href="/blog/tags/Vue/" style="font-size: 14px;">Vue</a> <a href="/blog/tags/Webpack/" style="font-size: 14px;">Webpack</a> <a href="/blog/tags/Await/" style="font-size: 14px;">Await</a>
+
+            </ul>
+        </div> -->
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('')">
+    <div class="head-layer">
+        
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>CSS3选择器清单</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        2015-08-21
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/blog/tags/CSS/">#CSS#</a>
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>选择器是css中一个很重要的内容，使用选择器可以提高在开发过程中修改样式表时的工作效率，并且使css的编写结构更加清晰和简单。css3在以前版本的基础上又添加的一些新的选择器，所以今天来总结一下css3选择器的特性及用法。</p>
+<h3 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h3><p>css3新增了3个属性选择器，分别是<strong>E[foo^=”bar”]</strong>、<strong>E[foo$=”bar”]</strong>、<strong>E[foo*=”bar”]</strong>。</p>
+<ul>
+<li>E[foo^=”bar”]: 匹配定义了foo属性，并且前缀为”bar”的E元素</li>
+<li>E[foo$=”bar”]: 匹配定义了foo属性，并且后缀为”bar”的E元素</li>
+<li>E[foo*=”bar”]: 匹配定义了foo属性，并且属性值包含”bar”的E元素</li>
+</ul>
+<blockquote>
+<p>当省略属性选择器前不加”E”的时候，表示匹配任意类型元素。这三个属性选择器遵循惯用编码规则，选用”^”,”$”,”*”分别代表开始、结束、任意。</p>
+</blockquote>
+<h3 id="结构伪类选择器"><a href="#结构伪类选择器" class="headerlink" title="结构伪类选择器"></a>结构伪类选择器</h3><ul>
+<li>E:root 匹配E元素所在文档的根元素，一般根元素就是Html</li>
+<li>E:nth-child(n) 匹配所在父节点中第n个位置的E元素(子节点))。</li>
+<li>E:nth-last-child(n) 匹配所在父节点<strong>倒数</strong>第n个位置的E元素(与上面的类似)</li>
+<li>E:nth-of-type(n) 匹配所在父节点中第n个位置的同类型的E元素，其它类型元素不参与排序</li>
+<li>E:nth-last-of-type(n) 匹配所在父节点中<strong>倒数</strong>第n个位置的同类型的E元素</li>
+<li>E:last-child 义如其名，就是匹配所在父节点中最后一个E元素</li>
+<li>E:first-of-type 匹配所在父节点中第一个同类型的E元素</li>
+<li>E:last-of-type 匹配所在父节点中最后一个同类型的E元素</li>
+<li>E:only-child 匹配所在父节点中只包含一个元素，且该元素正是E</li>
+<li>E:only-of-type 匹配所在父节点中包含一个同类型元素，且该元素是E</li>
+<li>E:empty 匹配E元素，且该元素不含子节点<code>注意文本也属于节点</code></li>
+</ul>
+<blockquote>
+<p>以上，n可以是从1开始的数字，也可以是公式，如2n(匹配偶数)，2n+1(匹配奇数)，也可以是关键字odd(匹配奇数)，even(匹配偶数</p>
+</blockquote>
+<h3 id="UI伪类选择器"><a href="#UI伪类选择器" class="headerlink" title="UI伪类选择器"></a>UI伪类选择器</h3><p>在css3中除了结构性伪类选择器，还有UI伪类选择器。这些选择器的共同特征是：指定的样式只有在处于某种状态时才会起作用。</p>
+<ul>
+<li>E:enabled 匹配用户界面上所有可用的元素E</li>
+<li>E:disabled 匹配用户界面上所有不可用的元素E</li>
+<li>E:checked  匹配用户界面上处于选中状态的元素E</li>
+</ul>
+<h3 id="其它选择器"><a href="#其它选择器" class="headerlink" title="其它选择器"></a>其它选择器</h3><ul>
+<li>E~F 兄弟选择器，匹配E元素后的所有F元素，两者处于同一级结构上。</li>
+<li>E:not(s) 否定选择器，匹配除了符合”s”选择符的E元素,”s”是一个简单结构选择器。</li>
+<li>E:target 匹配被URL选中的E元素，如”w3cay.com/#element”会匹配id=”element”的E元素。</li>
+</ul>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+ <section id="comments">
+<!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2136203"></script>
+<!-- UY END -->
+ </section>
+ 
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+
+
+    <!-- footer scripts -->
+    
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p class="copyright text-muted"><a href="http://w3cay.com">© 安望云海 ❤️</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdn.bootcss.com/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+</body>
+
+</html>
